@@ -1,16 +1,19 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
 /* CSS custom properties (variables) Root scope (Can be used anywhere) */
 :root {
     --success-color:#2ecc71;
     --error-color:#e74c3c;
 }
 
+
 /* Padding won't affect the width of the elements. */
 * {
     box-sizing: border-box;
 }
+
 
 body {
     background-color: #f9fafb;
@@ -24,6 +27,7 @@ body {
     margin: 0;
 }
 
+
 /* Box around the form */
 .container {
     background-color: #fff;
@@ -32,27 +36,37 @@ body {
     width: 400px;
 }
 
+
+/* Register With Us text */
 h2 {
     text-align: center;
     margin: 0 0 20px;
 }
 
+
+/* Form as a whole */
 .form {
     padding: 30px 40px;
 }
 
+
+/* All of the inputs */
 .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
 
+
+/* Input label text */
 .form-control label {
     color: #777;
     display: block;
     margin-bottom: 5px;
 }
 
+
+/* Input boxes */
 .form-control input {
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -62,21 +76,25 @@ h2 {
     font-size: 14px;
 }
 
+
 /* Styles input border when clicked */
 .form-control input:focus {
     outline: 0;
     border-color: #777;
 }
 
+
 /* Input box display green if valid */
 .form-control.success input {
     border-color: var(--success-color);
 }
 
+
 /* Input box display red if invalid */
 .form-control.error input {
     border-color: var(--error-color);
 }
+
 
 /* Error messages */
 .form-control small {
@@ -87,10 +105,12 @@ h2 {
     visibility: hidden;
 }
 
+
 /* Error message visible when needed */
 .form-control.error small {
     visibility: visible;
 }
+
 
 /* Submit button */
 .form button {
